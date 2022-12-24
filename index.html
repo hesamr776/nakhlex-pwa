@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nakhlex</title>
+
+    <meta
+      content="initial-scale=1,width=device-width, viewport-fit=cover"
+      name="viewport"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta
+      name="title"
+      content="نخلِکس أول منصة محلیة للعملات المشفرة  في العراق"
+    />
+    <meta
+      name="description"
+      content="نخلِکس هي إحدی المنصات الموثوقة في العراق لبيع و شراء معظم العملات الرقمية مثل التيثر، إيثريوم، لايتکوين، إکس آر بي، ثيرون و غيرها"
+    />
+    <style>
+      /* These styles make the body full-height */
+      html,
+      body,
+      #react-native-web-app {
+        min-height: var(--full-height);
+        max-height: var(--full-height);
+        /* max-width: min(100vw, 575px); */
+        min-width: 320px;
+        margin: 0 auto;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+        background-color: #f8f8fa;
+      }
+
+      :root {
+        --full-height: 100vh;
+      }
+
+      /* These styles make the react-native-web-app element flex and column wise filling */
+      #react-native-web-app {
+        display: flex;
+        flex-direction: column;
+      }
+      @font-face {
+        font-family: 'Fedra-Medium';
+        src: url('assets/fonts/Fedra-Medium.otf') format('opentype');
+      }
+      @font-face {
+        font-family: 'Fedra-Bold';
+        src: url('assets/fonts/Fedra-Bold.otf') format('opentype');
+      }
+      @font-face {
+        font-family: 'Fedra-Demi';
+        src: url('assets/fonts/Fedra-Demi.otf') format('opentype');
+      }
+
+      :focus-visible {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="react-native-web-app"></div>
+    <script type="text/javascript" src="dist/bundle.web.js"></script>
+    <script lang="javascript">
+      const documentRoot = document.querySelector(':root');
+      documentRoot.style.setProperty(
+        '--full-height',
+        `${window.innerHeight}px`,
+      );
+
+      window.addEventListener('resize', ({ target }) => {
+        const { innerHeight } = target;
+        console.log(innerHeight);
+        documentRoot.style.setProperty('--full-height', `${innerHeight}px`);
+      });
+    </script>
+  </body>
+</html>

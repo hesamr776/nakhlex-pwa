@@ -1,0 +1,19 @@
+{
+  "dir": "rtl",
+  "lang": "ar",
+  "description": "نخلِکس هي إحدی المنصات الموثوقة في العراق لبيع و شراء معظم العملات الرقمية مثل التيثر، إيثريوم، لايتکوين، إکس آر بي، ثيرون و غيرها",
+  "name": "نخلِکس",
+  "short_name": "Nakhlex",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "72x72 96x96 128x128 256x256",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f8f8fa",
+  "background_color": "#f8f8fa",
+  "orientation": "portrait"
+}
